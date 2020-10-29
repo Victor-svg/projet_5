@@ -44,7 +44,7 @@ class ArticleFixtures extends Fixture
 
                     $days = (new \DateTime())->diff($article->getCreatedAt())->days;
 
-                    // Ajouter le com
+                    // Ajouter le comment
                     $now = new \DateTime();
                     $interval = $now->diff($article->getCreatedAt());
                     $comment->setAuthor($faker->name)
